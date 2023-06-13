@@ -35,7 +35,7 @@
  * |  Nav  |   Q   |   M   |   W   |   B   |   Z   |-----------------------------------|   J   |   F   |   O   |   U   |   ;   |   Adj |
  * |  TAB  |   N   |   R   |   S   |   T   |   G   |-----------------------------------|   Y   |   H   |   E   |   I   |   A   |   '   |
  * |  GUI  |   X   |   L   |   C   |   D   |   V   |  ESC  |-------------------|  DEL  |   K   |   P   |   ,   |   .   |  Up   | ENTER |
- * | Heart | Hyper |Nrsstr |-------| Sym   | SHIFT |  CTRL |  ALT  |---|   ?   | BKSPC | SPACE |  Nav  |-------| Left  | Down  | Right |
+ * | Heart | Hyper | Nrstr |-------| Sym   | SHIFT |  CTRL |  ALT  |---|   ?   | BKSPC | SPACE |  Nav  |-------| Left  | Down  | Right |
  */
                         bindings = <
 &kp  NAV_L    &kp  Q        &kp  M        &kp  W        &kp  B        &kp  Z                                                                         &kp  J        &kp  F        &kp  O        &kp  U        &kp  ;        &kp  BSPC
