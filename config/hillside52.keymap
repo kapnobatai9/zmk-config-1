@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define QWERTY_L 0
+#define NSTAR_L  0
 #define DVORAK_L 1
 #define COLEMK_L 2
 #define NAV_L    3
@@ -29,18 +29,18 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-/* QWERTY
+/* NSTAR
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | ESC   |   Q   |   M   |   W   |   B   |   Z   |-----------------------------------|   J   |   F   |   O   |   U   |   ;   | ADJ_L |
  * | TAB   |   N   |   R   |   S   |   T   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   A   |   '   |
- * | GUI   |   X   |   L   |   C   |   D   |   V   |  Mute |-------------------|   /   |   K   |   P   |   ,   |   .   |  Up   | ENTER |
- * | Mute  |  ESC  | CTRL  |-------| SHIFT |  CTRL |  ALT  |  Nav  |---|  Sym  | BKSPC | SPACE |  Sym  |-------| Left  | Down  | Right |
+ * | GUI   |   X   |   L   |   C   |   D   |   V   |  Mute |-------------------|  DEL  |   K   |   P   |   ,   |   .   |  Up   | ENTER |
+ * | Mute  |  ESC  | CTRL  |-------| Nav   | SHIFT |  CTRL |  ALT  |---|  Sym  | BKSPC | SPACE |  Sym  |-------| Left  | Down  | Right |
  */
                         bindings = <
 &kp  ESC      &kp  Q        &kp  M        &kp  W        &kp  B        &kp  Z                                                                         &kp  J        &kp  F        &kp  O        &kp  U        &kp  SEMI     &kp  ADJ_L
 &kp  TAB      &kp  N        &kp  R        &kp  S        &kp  T        &kp  G                                                                         &kp  Y        &kp  H        &kp  E        &kp  I        &kp  A        &kp  SQT
-&kp  LGUI     &kp  X        &kp  L        &kp  C        &kp  D        &kp  V        &kp  C_MUTE                                        &kp  SLASH    &kp  K        &kp  P        &kp  COMMA    &kp  DOT      &kp  UP       &kp  ENTER
-&kp  C_MUTE   &kp  ESC      &kp  LCTRL                  &kp  LSHFT    &kp  LCTRL    &sk  LALT    &mo  NAV_L              &mo  SYM_L    &kp  BSPC     &kp  SPACE    &kp  SYM_L                  &kp  LEFT     &kp  DOWN     &kp  RIGHT
+&kp  LGUI     &kp  X        &kp  L        &kp  C        &kp  D        &kp  V        &kp  C_MUTE                                        &kp  DEL      &kp  K        &kp  P        &kp  COMMA    &kp  DOT      &kp  UP       &kp  ENTER
+&kp  C_MUTE   &kp  ESC      &kp  LCTRL                  &kp  NAV_L    &kp  LSHFT    &sk  LCTRL    &mo  LALT              &mo  SYM_L    &kp  BSPC     &kp  SPACE    &kp  SYM_L                  &kp  LEFT     &kp  DOWN     &kp  RIGHT
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -122,7 +122,7 @@
                 adj_layer {
 /* ADJUST
  * -------------------------------------------------------------------------------------------------------------------------------------
- * |       | QWERTY| DVORAK| COLEMK|       |       |-----------------------------------|       |Prt Scr|       | EP_OFF| EP_ON |       |
+ * |       | NSTAR | DVORAK| COLEMK|       |       |-----------------------------------|       |Prt Scr|       | EP_OFF| EP_ON |       |
  * |       | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |       |       |       |       |
  * | BOOTL | RESET |       |OUT_USB|OUT_BLE|       |BT CLR |-------------------|       |       |       |       |       |       | SHIFT |
  * ----------------|       |-------|       |       |       |       |---|       |       |       |       |-------| CTRL  |----------------
