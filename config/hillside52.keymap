@@ -33,13 +33,13 @@
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | `     |   Q   |   M   |   W   |   B   |   Z   |-----------------------------------|   J   |   F   |   O   |   U   |   ;   | BKSPC |
  * | TAB   |   N   |   R   |   S   |   T   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   A   | ENTER |
- * | SHIFT |   X   |   L   |   C   |   D   |   V   |   '   |-------------------|   /   |   K   |   P   |   ,   |   .   |  Up   | ENTER |
+ * | SHIFT |   X   |   L   |   C   |   D   |   V   |   '   |-------------------|   /   |   K   |   P   |   ,   |   .   |  Up   | SHIFT |
  * | Mute  |  ESC  | CTRL  |-------|  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |-------| Left  | Down  | Right |
  */
                         bindings = <
 &kp  GRAVE    &kp  Q        &kp  M        &kp  W        &kp  B        &kp  Z                                                                         &kp  J        &kp  F        &kp  O        &kp  U        &kp  SEMI     &kp  BSPC
-&kp  TAB      &kp  N        &kp  R        &kp  S        &kp  T        &kp  G                                                                         &kp  Y        &kp  HY       &kp  E        &kp  I        &kp  A        &kp  ENTER
-&kp  LSHFT    &kp  X        &kp  L        &kp  C        &kp  D        &kp  V        &kp  SQT                                           &kp  SLASH    &kp  K        &kp  P        &kp  COMMA    &kp  DOT      &kp  UP       &kp  ENTER
+&kp  TAB      &kp  N        &kp  R        &kp  S        &kp  T        &kp  G                                                                         &kp  Y        &kp  H        &kp  E        &kp  I        &kp  A        &kp  ENTER
+&kp  LSHFT    &kp  X        &kp  L        &kp  C        &kp  D        &kp  V        &kp  SQT                                           &kp  SLASH    &kp  K        &kp  P        &kp  COMMA    &kp  DOT      &kp  UP       &kp  RSHFT
 &kp  C_MUTE   &kp  ESC      &kp  LCTRL                  &kp  LGUI     &kp  LALT     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &kp  LALT     &kp  RGUI                   &kp  LEFT     &kp  DOWN     &kp  RIGHT
                         >;
 			
