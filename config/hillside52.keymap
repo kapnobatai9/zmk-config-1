@@ -37,10 +37,10 @@
  * | ENTER |  ESC  | CTRL  |-------| ALT   | SHIFT |  CTRL |  Nav  |---|  Sym  | BKSPC | SPACE | /     |-------| Left  | Down  | Right |
  */
                         bindings = <
-&kp  ESC      &kp  Q        &kp  M        &kp  W        &kp  B        &kp  Z                                                                          &kp  J        &kp  F        &kp  O        &kp  U        &kp  SEMI     &mo  ADJ_L
-&kp  TAB      &kp  N        &kp  R        &kp  S        &kp  T        &kp  G                                                                          &kp  Y        &kp  H        &kp  E        &kp  I        &kp  A        &kp  SQT
-&kp  LGUI     &kp  X        &kp  L        &kp  C        &kp  D        &kp  V        &kp  DEL                                            &mo  DVORAK_L &kp  K        &kp  P        &kp  COMMA    &kp  DOT      &kp  UP       &kp  ENTER
-&kp  ENTER    &kp  ESC      &kp  LCTRL                  &kp  LALT    &kp  LSHFT     &kp  LCTRL    &mo  NAV_L              &mo  SYM_L    &kp  BSPC     &kp  SPACE    &kp  SLASH                  &kp  LEFT     &kp  DOWN     &kp  RIGHT
+&kp  ESC      &kp  Q        &kp  M        &kp  W        &kp  B        &kp  Z                                                                           &kp  J        &kp  F        &kp  O        &kp  U        &kp  SEMI     &mo  ADJ_L
+&kp  TAB      &kp  N        &kp  R        &kp  S        &kp  T        &kp  G                                                                           &kp  Y        &kp  H        &kp  E        &kp  I        &kp  A        &kp  SQT
+&kp  LGUI     &kp  X        &kp  L        &kp  C        &kp  D        &kp  V        &kp  DEL                                             &mo  DVORAK_L &kp  K        &kp  P        &kp  COMMA    &kp  DOT      &kp  UP       &kp  ENTER
+&kp  ENTER    &kp  ESC      &kp  LCTRL                  &kp  LALT    &kp  LSHFT     &kp  LCTRL    &mo  NAV_L              &mt SYM_L BSPC &mt  BSPC     &kp  SPACE    &kp  SLASH                  &kp  LEFT     &kp  DOWN     &kp  RIGHT
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
