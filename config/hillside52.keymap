@@ -40,7 +40,7 @@
 &kp  ESC      &kp  Q        &kp  M        &kp  W        &kp  B        &kp  Z                                                                          &kp  J        &kp  F        &kp  O        &kp  U        &kp  SEMI     &mo  ADJ_L
 &kp  TAB      &kp  N        &kp  R        &kp  S        &kp  T        &kp  G                                                                          &kp  Y        &kp  H        &kp  E        &kp  I        &kp  A        &kp  SQT
 &kp  LGUI     &kp  X        &kp  L        &kp  C        &kp  D        &kp  V        &kp  DEL                                            &mo  DVORAK_L &kp  K        &kp  P        &kp  COMMA    &kp  DOT      &kp  UP       &kp  ENTER
-&kp  ENTER    &kp  ESC      &kp  NAV_L                  &kp  LALT    &kp  LSHFT     &kp  LCTRL    &mo  NAV_L              &mo  SYM_L    &kp  BSPC     &kp  SPACE    &kp  SLASH                  &kp  LEFT     &kp  DOWN     &kp  RIGHT
+&kp  ENTER    &kp  ESC      &mo  NAV_L                  &kp  LALT    &kp  LSHFT     &kp  LCTRL    &mo  NAV_L              &mo  SYM_L    &kp  BSPC     &kp  SPACE    &kp  SLASH                  &kp  LEFT     &kp  DOWN     &kp  RIGHT
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -58,7 +58,7 @@
 &kp  GRAVE    &kp  SQT      &kp  COMMA    &kp  DOT      &kp  P        &kp  Y                                                                         &kp  S        &kp  7        &kp  8        &kp  9        &kp  L        &mo  ADJ_L
 &kp  TAB      &kp  A        &kp  O        &kp  E        &kp  U        &kp  I                                                                         &kp  S        &kp  4        &kp  5        &kp  6        &kp  S        &kp  ENTER
 &kp  LSHFT    &kp  SEMI     &kp  Q        &kp  J        &kp  K        &kp  X        &kp  Z                                             &kp  SLASH    &kp  S        &kp  1        &kp  2        &kp  3        &kp  UP       &kp  RSHFT
-&kp  C_MUTE   &kp  ESC      &kp  LCTRL                  &kp  LGUI     &kp  LALT     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &kp  LALT     &kp  0                      &kp  LEFT     &kp  DOWN     &kp  RIGHT
+&kp  C_MUTE   &kp  ESC      &kp  LCTRL                  &kp  LGUI     &kp  LALT     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &kp  RALT     &kp  0                      &kp  LEFT     &kp  DOWN     &kp  RIGHT
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
