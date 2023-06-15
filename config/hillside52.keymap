@@ -36,10 +36,10 @@
  */
 
             bindings = <
-     &kp ESC     &kp Q       &kp M  &kp W  &kp B      &kp Z                                                &kp J  &kp F      &kp O     &kp U  &kp SEMI  &mo ADJ_L
-     &kp TAB     &kp N       &kp R  &kp S  &kp T      &kp G                                                &kp Y  &kp H      &kp E     &kp I     &kp A    &kp SQT
-    &kp LGUI     &kp X       &kp L  &kp C  &kp D      &kp V    &kp DEL                        &to 4        &kp K  &kp P  &kp COMMA   &kp DOT    &kp UP  &kp ENTER
-&kp K_SELECT  &kp HOME  &kp INSERT         &to 0  &kp LSHFT  &kp LCTRL  &kp LALT  &lt 4 BSPC  &sl 3  &lt 4 SPACE  &sl 1             &kp LEFT  &kp DOWN  &kp RIGHT
+   &kp ESC     &kp Q   &kp M  &kp W  &kp B      &kp Z                                                &kp J  &kp F      &kp O     &kp U  &kp SEMI  &mo ADJ_L
+   &kp TAB     &kp N   &kp R  &kp S  &kp T      &kp G                                                &kp Y  &kp H      &kp E     &kp I     &kp A    &kp SQT
+  &kp LGUI     &kp X   &kp L  &kp C  &kp D      &kp V    &kp DEL                        &to 4        &kp K  &kp P  &kp COMMA   &kp DOT    &kp UP  &kp ENTER
+&kp INSERT  &kp HOME  &tog 1         &to 0  &kp LSHFT  &kp LCTRL  &kp LALT  &lt 4 BSPC  &sl 3  &lt 4 SPACE  &sl 1             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -93,10 +93,10 @@
  */
 
             bindings = <
-&trans                &kp N1            &kp N2             &kp N3                 &kp N4     &kp N5                                              &kp N6  &kp DOLLAR   &kp PLUS              &kp POUND  &kp CARET         &trans
-&trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp Paste                                           &kp EQUAL     &kp SQT  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp SLASH  &kp BACKSLASH
-&trans                &kp F1            &kp F2             &kp F3                 &kp F4     &kp F5  &kp Undo                     &kp Redo  &kp PERCENT      &kp AT  &kp COMMA             &kp PERIOD     &trans         &trans
-&trans                &trans            &trans                                     &to 0     &trans    &trans  &trans  &mo ADJ_L    &trans       &trans      &trans                            &trans     &trans         &trans
+&trans                &kp N1            &kp N2             &kp N3                 &kp N4     &kp N5                                        &kp N6   &kp DOLLAR   &kp PLUS   &kp POUND  &kp CARET         &trans
+&trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp Paste                                     &kp EQUAL      &kp SQT  &kp MINUS      &kp AT  &kp SLASH  &kp BACKSLASH
+&trans                &kp F1      &kp CAPSLOCK         &caps_word          &kp K_REFRESH     &kp F5  &trans                     &trans  &kp TILDE  &kp PERCENT  &kp COMMA  &kp PERIOD     &trans         &trans
+&trans                &trans            &trans                                     &to 0     &trans  &trans  &trans  &mo ADJ_L  &trans     &trans       &trans                 &trans     &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
