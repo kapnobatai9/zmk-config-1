@@ -55,9 +55,9 @@
  */
 
             bindings = <
-      &trans   &kp COLON       &kp U      &kp O   &kp F   &kp J                                      &kp Z   &kp B  &kp W   &kp M   &kp Q        &kp ESC
+       &to 5   &kp COLON       &kp U      &kp O   &kp F   &kp J                                      &kp Z   &kp B  &kp W   &kp M   &kp Q        &kp ESC
 &kp CAPSLOCK       &kp A       &kp I      &kp E   &kp H   &kp Y                                      &kp G   &kp T  &kp S   &kp R   &kp N        &kp TAB
-   &kp ENTER  &caps_word  &kp PERIOD  &kp COMMA   &kp P   &kp K  &kp BSPC                  &kp DEL   &kp V   &kp D  &kp C   &kp L   &kp X  &kp RIGHT_WIN
+   &kp ENTER  &caps_word  &kp PERIOD  &kp MINUS   &kp P   &kp K  &kp BSPC                  &kp DEL   &kp V   &kp D  &kp C   &kp L   &kp X  &kp RIGHT_WIN
       &trans      &trans      &trans             &trans  &trans    &trans  &trans  &trans   &trans  &trans  &trans         &trans  &trans         &trans
             >;
 
@@ -74,10 +74,10 @@
  */
 
             bindings = <
- &kp GRAVE    &kp Q  &kp W  &kp F  &kp P     &kp B                                                &kp J     &kp L      &kp U     &kp Y  &kp SEMI   &kp BSPC
-   &kp TAB    &kp A  &kp R  &kp S  &kp T     &kp G                                                &kp M     &kp N      &kp E     &kp I     &kp O  &kp ENTER
- &kp LSHFT    &kp Z  &kp X  &kp C  &kp D     &kp V     &kp SQT                        &kp SLASH   &kp K     &kp H  &kp COMMA   &kp DOT    &kp UP  &kp RSHFT
-&kp C_MUTE  &kp ESC  &to 0         &to 0  &kp LALT  &sk LSHIFT  &mo NAV_L  &mo SYM_L  &kp SPACE  &trans  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
+ &kp GRAVE       &kp Q          &kp W         &kp F       &kp P     &kp B                                                      &kp J         &kp L  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &kp SEMI   &kp BSPC
+   &kp TAB  &kp C_PREV  &kp K_REFRESH  &kp K_SELECT  &kp C_NEXT  &kp C_FF                                               &kp C_REWIND  &kp C_REWIND   &kp C_PLAY_PAUSE         &kp C_FF              &kp O  &kp ENTER
+ &kp LSHFT       &kp Z          &kp X         &kp C       &kp D     &kp V     &kp SQT                        &kp SLASH         &kp K         &kp H          &kp COMMA          &kp DOT    &kp C_VOLUME_UP  &kp RSHFT
+&kp C_MUTE     &kp ESC          &to 0                     &to 0  &kp LALT  &sk LSHIFT  &mo NAV_L  &mo SYM_L  &kp SPACE        &trans      &kp RGUI                          &kp C_MUTE  &kp C_VOLUME_DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
