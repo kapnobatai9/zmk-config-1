@@ -36,9 +36,9 @@
  */
 
             bindings = <
- &kp ESC     &kp Q  &kp M  &kp W  &kp B               &kp Z                                                   &kp J  &kp F      &kp O     &kp U  &kp SEMI      &mo 5
+ &kp ESC     &kp Q  &kp M  &kp W  &kp B               &kp Z                                                   &kp J  &kp F      &kp O     &kp U  &kp SEMI      &mo 6
  &kp TAB     &kp N  &kp R  &kp S  &kp T               &kp G                                                   &kp Y  &kp H      &kp E     &kp I     &kp A    &kp SQT
-&kp LGUI     &kp X  &kp L  &kp C  &kp D               &kp V  &lt 2 DELETE                        &none        &kp K  &kp P  &kp MINUS   &kp DOT    &kp UP  &kp ENTER
+&kp LGUI     &kp X  &kp L  &kp C  &kp D               &kp V  &lt 2 DELETE                        &sl 6        &kp K  &kp P  &kp MINUS   &kp DOT    &kp UP  &kp ENTER
    &kp A  &kp HOME  &to 4         &sl 1  &mt LSHFT KP_COMMA     &kp LCTRL  &kp LALT  &lt 2 BSPC  &sl 3  &lt 4 SPACE  &sl 5             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
@@ -55,7 +55,7 @@
  */
 
             bindings = <
-       &to 5      &kp COLON       &kp U      &kp O  &kp F   &kp J                                      &kp Z  &kp B  &kp W   &kp M   &kp Q        &kp ESC
+       &to 6      &kp COLON       &kp U      &kp O  &kp F   &kp J                                      &kp Z  &kp B  &kp W   &kp M   &kp Q        &kp ESC
 &kp CAPSLOCK          &kp A       &kp I      &kp E  &kp H   &kp Y                                      &kp G  &kp T  &kp S   &kp R   &kp N        &kp TAB
    &kp ENTER    &kp PAGE_UP  &kp PERIOD  &kp MINUS  &kp P   &kp K  &kp BSPC                  &kp DEL   &kp V  &kp D  &kp C   &kp L   &kp X  &kp RIGHT_WIN
       &trans  &kp PAGE_DOWN       &to 0             &sl 2  &trans    &trans  &trans  &trans    &to 3  &trans  &sl 2         &trans  &trans         &trans
@@ -115,10 +115,19 @@
 &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                                   &kp CARET  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9         &none  &trans
 &trans   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10                                    &kp HASH        &kp KP_N4  &kp KP_N5  &kp KP_N6      &kp RGUI  &trans
 &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5  &trans                   &to 4  &kp DOLLAR        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp QUESTION  &trans
- &none    &none    &to 0             &to 5   &trans  &trans  &trans  &trans  &trans      &trans        &kp KP_N0                &trans        &trans  &trans
+ &none    &none    &to 0             &to 6   &trans  &trans  &trans  &trans  &trans      &trans        &kp KP_N0                &trans        &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        bonus_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+            >;
         };
 
         nav_layer {
@@ -131,10 +140,10 @@
  */
 
             bindings = <
-      &none       &to 0           &to 1         &to 2         &none         &none                                       &none  &kp PRINTSCREEN  &none  &ext_power EP_OFF  &none  &trans
-      &none    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT  &bt BT_SEL 4                                       &none            &none  &none              &none  &none   &none
-&bootloader  &sys_reset           &none  &out OUT_USB  &out OUT_BLE         &none  &bt BT_CLR                   &none   &none            &none  &none              &none  &none  &trans
-      &none       &none           &to 0                       &to 5        &trans      &trans  &trans  &trans  &trans  &trans            &to 5                 &kp RCTRL  &none   &none
+      &none       &to 0           &to 1         &to 2         &none         &none                                    &none  &kp PRINTSCREEN  &none  &ext_power EP_OFF  &none  &trans
+      &none    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT  &bt BT_SEL 4                                    &none            &none  &none              &none  &none   &none
+&bootloader  &sys_reset           &none  &out OUT_USB  &out OUT_BLE         &none  &bt BT_CLR                 &none  &none            &none  &none              &none  &none  &trans
+      &none       &none           &to 0                       &to 6        &trans      &trans  &trans  &to 2  &to 3  &to 4            &to 6                 &kp RCTRL  &none   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
