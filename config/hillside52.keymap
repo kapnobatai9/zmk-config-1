@@ -80,9 +80,9 @@
  */
 
             bindings = <
-&trans  &kp C_AC_FORWARD  &kp C_MENU_PICK  &kp C_AC_OPEN      &kp C_AC_PROPS    &kp K_CUT                                     &kp K_MUTE     &kp C_VOL_DN      &kp C_VOL_UP  &kp PRINTSCREEN     &none  &trans
-&trans             &none            &none     &kp INSERT               &none   &kp K_COPY                                          &none     &kp C_REWIND  &kp C_PLAY_PAUSE         &kp C_FF  &kp C_FF  &trans
- &none      &kp C_AC_CUT            &none  &kp C_AC_COPY  &kp C_AC_BOOKMARKS  &kp K_PASTE  &kp CLEAR                   &to 4       &none  &kp PRINTSCREEN     &kp C_AC_UNDO    &kp C_AC_REDO     &none  &trans
+&trans  &kp C_AC_FORWARD  &kp C_MENU_PICK  &kp C_AC_OPEN         &bootloader    &kp K_CUT                                     &kp K_MUTE     &kp C_VOL_DN      &kp C_VOL_UP  &kp PRINTSCREEN     &none  &trans
+&trans    &kp C_AC_CLOSE   &kp C_AC_PROPS  &kp C_AC_HOME             &kp INS   &kp K_COPY                                          &none     &kp C_REWIND  &kp C_PLAY_PAUSE         &kp C_FF  &kp C_FF  &trans
+&trans     &kp C_AC_EXIT            &none          &none  &kp C_AC_BOOKMARKS  &kp K_PASTE  &kp CLEAR                   &to 4       &none  &kp PRINTSCREEN     &kp C_AC_UNDO    &kp C_AC_REDO     &none  &trans
 &trans            &trans            &to 0                              &sl 3       &trans     &trans  &trans  &trans  &trans      &trans            &sl 3                             &trans    &trans  &trans
             >;
 
@@ -120,7 +120,7 @@
             bindings = <
 &trans                 &none             &none              &none                  &none    &kp K_CUT                                    &kp K_CUT  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9      &none  &trans
 &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS   &kp K_COPY                                   &kp K_COPY        &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0  &trans
-&trans        &kp LEFT_BRACE     &kp LESS_THAN   &kp GREATER_THAN        &kp RIGHT_BRACE  &kp K_PASTE  &trans                   &to 4  &kp K_PASTE        &kp KP_N1  &kp KP_N2  &kp KP_N3     &trans  &trans
+&trans        &kp LEFT_BRACE     &kp LESS_THAN   &kp GREATER_THAN        &kp RIGHT_BRACE  &kp K_PASTE  &trans                   &to 4  &kp K_PASTE        &kp KP_N1  &kp KP_N2  &kp KP_N3     &kp UP  &trans
  &none                 &none             &to 0                                     &to 5       &trans  &trans  &trans  &trans  &trans       &trans        &kp KP_N0                &trans     &trans  &trans
             >;
 
