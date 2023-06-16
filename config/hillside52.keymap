@@ -23,6 +23,15 @@
 #define Redo   LC(Y)
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        print_screen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <2 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,7 +64,7 @@
  */
 
             bindings = <
-       &to 6      &kp COLON       &kp U      &kp O  &kp F   &kp J                                      &kp Z  &kp B  &kp W   &kp M   &kp Q        &kp ESC
+  &kp ESCAPE      &kp COLON       &kp U      &kp O  &kp F   &kp J                                      &kp Z  &kp B  &kp W   &kp M   &kp Q        &kp ESC
 &kp CAPSLOCK          &kp A       &kp I      &kp E  &kp H   &kp Y                                      &kp G  &kp T  &kp S   &kp R   &kp N        &kp TAB
    &kp ENTER    &kp PAGE_UP  &kp PERIOD  &kp MINUS  &kp P   &kp K  &kp BSPC                  &kp DEL   &kp V  &kp D  &kp C   &kp L   &kp X  &kp RIGHT_WIN
       &trans  &kp PAGE_DOWN       &to 0             &sl 2  &trans    &trans  &trans  &trans    &to 3  &trans  &sl 2         &trans  &trans         &trans
@@ -74,10 +83,10 @@
  */
 
             bindings = <
- &kp GRAVE       &kp Q          &kp W         &kp F       &kp P          &kp B                                        &none            &kp L              &none  &kp C_VOLUME_UP           &kp SEMI          &kp BSPC
-&caps_word  &kp C_PREV  &kp K_REFRESH  &kp K_SELECT  &kp C_NEXT    &kp PAGE_UP                                        &none  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL    &sk RIGHT_ALT      &sk RIGHT_GUI         &kp ENTER
- &kp LSHFT       &kp Z          &kp X         &kp C       &kp D  &kp PAGE_DOWN  &kp SQT                   &to 4  &kp C_MUTE         &kp C_RW          &kp COMMA          &kp DOT    &kp C_VOLUME_UP         &kp RSHFT
-    &trans      &trans          &to 0                     &sl 3         &trans   &trans  &trans  &trans  &trans      &trans            &sl 3                          &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE
+ &kp GRAVE               &kp Q          &kp W    &kp C_AC_PROPS  &kp C_MENU_SELECT  &kp C_AC_UNDO                                       &kp C_VOLUME_UP  &kp PRINTSCREEN             &none     &kp C_VOLUME_UP           &kp SEMI          &kp BSPC
+&caps_word       &kp C_AC_BACK  &kp K_REFRESH  &kp C_AC_FORWARD      &kp C_AC_UNDO  &kp C_AC_REDO                                     &kp C_VOLUME_DOWN     &kp C_REWIND  &kp C_PLAY_PAUSE  &sk C_FAST_FORWARD      &sk RIGHT_GUI         &kp ENTER
+ &kp LSHFT        &kp C_AC_CUT          &kp X        &kp INSERT         &kp C_PREV    &kp K_PASTE  &kp CLEAR                   &to 4         &kp C_MUTE    &kp C_AC_BACK         &kp COMMA    &kp C_AC_FORWARD    &kp C_VOLUME_UP         &kp RSHFT
+    &trans  &kp C_AC_FAVORITES          &to 0                                &sl 3         &trans     &trans  &trans  &trans  &trans             &trans            &sl 3                            &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -93,10 +102,10 @@
  */
 
             bindings = <
-&trans                &kp N1            &kp N2         &caps_word       &kp C_PLAY_PAUSE     &kp N5                                 &kp GRAVE   &kp DOLLAR   &kp PLUS   &kp POUND     &kp CARET         &trans
-&trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp Paste                                 &kp EQUAL      &kp SQT  &kp MINUS      &kp AT     &kp SLASH  &kp BACKSLASH
-&trans        &kp LEFT_BRACE     &kp LESS_THAN   &kp GREATER_THAN        &kp RIGHT_BRACE     &kp F5  &trans                  &to 4  &kp TILDE  &kp PERCENT  &kp COMMA  &kp PERIOD  &kp QUESTION         &trans
-&trans                &trans             &to 0                                     &sl 4     &trans  &trans  &trans  &trans  &to 3     &trans        &sl 4                 &trans        &trans         &trans
+&trans                 &none             &none         &caps_word                  &none   &none                                 &kp GRAVE   &kp DOLLAR   &kp PLUS   &kp POUND     &kp CARET         &trans
+&trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS   &none                                 &kp EQUAL      &kp SQT  &kp MINUS      &kp AT     &kp SLASH  &kp BACKSLASH
+&trans        &kp LEFT_BRACE     &kp LESS_THAN   &kp GREATER_THAN        &kp RIGHT_BRACE   &none  &trans                  &to 4  &kp TILDE  &kp PERCENT  &kp COMMA  &kp PERIOD  &kp QUESTION         &trans
+&trans                &trans             &to 0                                     &sl 4  &trans  &trans  &trans  &trans  &to 3     &trans        &sl 4                 &trans        &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -115,22 +124,22 @@
 &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                                   &kp CARET  &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9         &none  &trans
 &trans   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10                                    &kp HASH        &kp KP_N4  &kp KP_N5  &kp KP_N6      &kp RGUI  &trans
 &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5  &trans                   &to 4  &kp DOLLAR        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp QUESTION  &trans
- &none    &none    &to 0             &to 6   &trans  &trans  &trans  &trans  &trans      &trans        &kp KP_N0                &trans        &trans  &trans
+ &none    &none    &to 0             &to 5   &trans  &trans  &trans  &trans  &trans      &trans        &kp KP_N0                &trans        &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        bonus_layer {
+        nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+&trans    &trans    &trans  &trans     &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans    &trans  &trans     &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans    &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans   &to 5          &trans  &trans  &trans
             >;
         };
 
-        nav_layer {
+        laysel_layer {
             /* ADJUST
  * -------------------------------------------------------------------------------------------------------------------------------------
  * |       | QWERTY| DVORAK| COLEMK|       |       |-----------------------------------|       |Prt Scr|       | EP_OFF| EP_ON |       |
@@ -140,10 +149,10 @@
  */
 
             bindings = <
-      &none       &to 0           &to 1         &to 2         &none         &none                                    &none  &kp PRINTSCREEN  &none  &ext_power EP_OFF  &none  &trans
-      &none    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT  &bt BT_SEL 4                                    &none            &none  &none              &none  &none   &none
-&bootloader  &sys_reset           &none  &out OUT_USB  &out OUT_BLE         &none  &bt BT_CLR                 &none  &none            &none  &none              &none  &none  &trans
-      &none       &none           &to 0                       &to 6        &trans      &trans  &trans  &to 2  &to 3  &to 4            &to 6                 &kp RCTRL  &none   &none
+      &none       &none           &none         &none         &none         &none                                      &none      &none      &none  &ext_power EP_OFF     &none  &trans
+      &none    &kp LEFT  &kp DOWN_ARROW  &kp CAPSLOCK    &caps_word  &bt BT_SEL 4                                      &none  &sk RSHFT  &sk RCTRL           &sk RALT  &sk RGUI   &none
+&bootloader  &sys_reset           &none  &out OUT_USB  &out OUT_BLE         &none  &bt BT_CLR                 &kp DEL  &none      &none      &none              &none     &none  &trans
+      &none       &none           &to 0                       &to 6        &trans      &trans  &trans  &to 2    &to 3  &to 4      &to 5                     &kp RCTRL     &none   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
