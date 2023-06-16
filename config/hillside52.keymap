@@ -74,10 +74,10 @@
  */
 
             bindings = <
-&kp GRAVE       &kp Q          &kp W         &kp F       &kp P     &kp B                                               &kp C_VOLUME_UP         &kp L  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &kp SEMI          &kp BSPC
-  &kp TAB  &kp C_PREV  &kp K_REFRESH  &kp K_SELECT  &kp C_NEXT  &kp C_FF                                                    &kp C_MUTE  &kp C_REWIND   &kp C_PLAY_PAUSE         &kp C_FF              &kp O         &kp ENTER
-&kp LSHFT       &kp Z          &kp X         &kp C       &kp D     &kp V     &kp SQT                            &to 4       &kp C_MUTE         &kp H          &kp COMMA          &kp DOT    &kp C_VOLUME_UP         &kp RSHFT
-   &trans      &trans          &to 0                     &sl 3    &trans  &sk LSHIFT  &mo NAV_L  &mo SYM_L  &kp SPACE           &trans         &sl 3                          &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE
+&kp GRAVE       &kp Q          &kp W         &kp F       &kp P     &kp B                                                 &kp C_VOLUME_UP            &kp L  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &kp SEMI          &kp BSPC
+  &kp TAB  &kp C_PREV  &kp K_REFRESH  &kp K_SELECT  &kp C_NEXT  &kp C_FF                                               &kp C_VOLUME_DOWN  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL    &sk RIGHT_ALT      &sk RIGHT_GUI         &kp ENTER
+&kp LSHFT       &kp Z          &kp X         &kp C       &kp D     &kp V     &kp SQT                            &to 4         &kp C_MUTE         &kp C_RW          &kp COMMA          &kp DOT    &kp C_VOLUME_UP         &kp RSHFT
+   &trans      &trans          &to 0                     &sl 3    &trans  &sk LSHIFT  &mo NAV_L  &mo SYM_L  &kp SPACE             &trans            &sl 3                          &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
